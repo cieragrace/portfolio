@@ -7,10 +7,11 @@
 
 .nav-container {
   background-image: linear-gradient(to bottom, #d49b7e 0%, #ddb8a6 95%);
-  height: 15%;
+  height: 10%;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 2px #D49B7E solid;
   color: #893504;
 }
@@ -33,11 +34,12 @@ h3 {
   background-color: transparent;
   border: none;
   color: #893f04;
+  font-size: large;
   font-weight: bolder;
 }
 
 .main-container {
-  height: 70%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,16 +66,17 @@ h3 {
 
 .hello {
   height: 10%;
+  font-size: xx-large
 }
 
 .intro {
   height: 5%;
+  font-size: x-large;
 }
 
 .blurb {
-  height: 60%;
   width: 100%;
-  font-size:x-large
+  font-size: 1.33em;
 }
 
 .circle-link-container {
@@ -92,6 +95,7 @@ h3 {
   background-color: #c67f43;
   border: #893f04;
   color: #893f04;
+  font-size: 1.5em;
   text-align: center;
   font-weight: 800;
 }
@@ -101,11 +105,12 @@ h3 {
   width: 45%;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
 
 .image {
-  background-image: url('/public/assets/noBorder.png');
-  height: 100%;
+  background-image: url('/public/assets/MT.png');
+  height: 80%;
   border-radius: 50%;
   width: 75%;
   background-size: cover;
@@ -116,11 +121,77 @@ h3 {
 
 .footer-container {
   background-image: linear-gradient(to top, #d49b7e 0%, #ddb8a6 95%);
-  height: 15%;
+  height: 10%;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   /* padding-top: 7%; */
   border-top: 2px solid #D49B7E;
+}
+
+@media (max-width: 1086px) {
+  .nav-container {
+    flex-direction: column;
+    height: 10%;
+  }
+
+  .nav-link-container {
+    align-items: center;
+  }
+  .main-container {
+    flex-direction: column;
+  }
+
+  .info-section {
+    width: 90%;
+    align-items: center;
+  }
+
+  .circle-link-container {
+    width: 100%;
+  }
+
+  .image-section {
+    width: 70%;
+    align-items: flex-end;
+  }
+
+  .circle {
+    width: 28%;
+  }
+}
+
+@media (max-width: 786px){
+  .nav-container {
+    height: 8%;
+    justify-content: flex-start;
+  }
+
+  h3 {
+    margin: 1%;
+  }
+
+  .main-container {
+    height: 90%;
+  }
+
+  .footer-container {
+    height: 5%;
+  }
+
+  .info-section {
+    width: 98%;
+    height: 60%;
+  }
+
+  .image-section {
+    width: 98%;
+    height: 40%;
+  }
+
+  .circle {
+    width: 30%;
+    justify-content: center;
+  }
 }
