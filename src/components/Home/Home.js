@@ -31,9 +31,9 @@ const Home = () => {
         </section>
       </main>
       <footer className='footer-container'>
-        <button className='resume link'>resume</button>
-        <button className='linkedIn link'>linkedIn</button>
+        <button className='linkedIn link'>LinkedIn</button>
         <button className='github link'>GitHub</button>
+        <button className='resume link'>Resume</button>
       </footer>
     </div>
   )
