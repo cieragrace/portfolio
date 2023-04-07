@@ -5,20 +5,32 @@
 }
 
 .nav-container {
-  height: 10%;
+  background-image: linear-gradient(to bottom, #d49b7e 0%, #ddb8a6 95%);
+  height: 12%;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  border: 2px #D49B7E solid;
+  /* border: 2px #D49B7E solid; */
+  color: #893504;
 }
 
 h3 {
   height: 50%;
-  /* width: 15%; */
+  margin: 2%;
 }
 
 .nav-link-container {
-  height: 50%;
+  height: 90%;
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.link {
+  height: 25%;
+  background-color: transparent;
+  border: none;
 }
 
 .main-container {
@@ -26,18 +38,29 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #893f04;
 }
 
 .info-section {
-  height: 50%;
-  width: 45%;
+  height: 70%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.info-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: 70%;
 }
 
 .hello {
-  height: 15%;
+  height: 10%;
 }
 
 .intro {
@@ -45,11 +68,13 @@ h3 {
 }
 
 .blurb {
-  height: 10%;
+  height: 60%;
+  width: 100%;
 }
 
 .circle-link-container {
-  height: 20%;
+  height: 30%;
+  width: 81%;
   display: flex;
   flex-direction: row;
 }
@@ -57,27 +82,38 @@ h3 {
 .circle {
   height: 90%;
   width: 30%;
+  border-radius: 50%;
+  margin: 5%;
+  background-color: #c67f43;
+  border: #893f04;
+  color: #893f04;
+  text-align: center;
+  font-weight: 800;
 }
 
 .image-section {
   height: 80%;
-  width: 52%;
+  width: 45%;
   display: flex;
+  justify-content: center;
 }
 
 .image {
   background-image: url('/public/assets/noBorder.png');
   height: 100%;
   border-radius: 50%;
-  width: 54%;
-  background-size: cover;
-  margin-left: 2%;
+  width: 76%;
+  background-size: contain;
+  /* margin-left: 2%; */
+  border: 2px solid #d49b7e
 }
 
 .footer-container {
+  background-image: linear-gradient(to top, #d49b7e 0%, #ddb8a6 95%);
   height: 20%;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  border-top: 1px solid #D49B7E;
+  justify-content: space-around;
+  padding-top: 7%;
+  /* border-top: 1px solid #D49B7E; */
 }
