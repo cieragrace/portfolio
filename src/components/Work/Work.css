@@ -1,0 +1,21 @@
+.work-container {
+  height: 1000%;
+  width: 100%;
+}
+
+.project-header {
+  height: 15%;
+  width: 100%;
+}
+
+.work-nav {
+  display: flex;
+  justify-content: space-evenly;
+  height: 5%;
+  width: 100%;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2fr, 1fr);
+}
