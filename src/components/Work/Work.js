@@ -1,6 +1,6 @@
 import './Work.css'
 import WorkCard from '../WorkCard/WorkCard'
-import { Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Work = ({projects}) => {
   const projectCards = projects.map((project, index) => {
