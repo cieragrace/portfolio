@@ -7,11 +7,11 @@ const Home = () => {
       <nav className='nav-container'>
         <h3>Ciera Muniz FEE</h3>
         <div className='nav-link-container'>
-          <Link className='about link'>About</Link>
+          <Link to='/about' className='about link'>About</Link>
           <div>|</div>
-          <Link className='projects link'>Projects</Link>
+          <Link to='/projects' className='projects link'>Projects</Link>
           <div>|</div>
-          <Link className='contact link'>Contact</Link>
+          <Link to='/contact' className='contact link'>Contact</Link>
         </div>
       </nav>
       <main className='main-container'>
@@ -29,13 +29,13 @@ const Home = () => {
           </div>
           <div className='circle-link-container'>
             <div className='about circle'>
-              <Link className='about link'>About</Link>
+              <Link to='/about' className='about-link'>About</Link>
             </div>
             <div className='projects circle'>
-              <Link className='projects link'>Projects</Link>
+              <Link to='/projects' className='projects link'>Projects</Link>
             </div>
             <div className='contact circle'>
-              <Link className='contact link'>Contact</Link>
+              <Link to='/contact' className='contact link'>Contact</Link>
             </div>
           </div>
         </section>
@@ -44,9 +44,9 @@ const Home = () => {
         </section>
       </main>
       <footer className='footer-container'>
-        <Link className='linkedIn link'>LinkedIn</Link>
-        <Link className='github link'>GitHub</Link>
-        <Link className='resume link'>Resume</Link>
+        <a href='https://www.linkedin.com/in/ciera-muniz/' className='linkedIn link'>LinkedIn</a>
+        <a href='https://github.com/cieragrace' className='github link'>GitHub</a>
+        <a href='https://docs.google.com/document/d/18vq-qTCVMb_P5Ipbj60R9A848xsQq0aBTJjWFsQOG9k/edit?usp=sharing' className='resume link'>Resume</a>
       </footer>
     </div>
   )

@@ -7,8 +7,23 @@ import ProjectDetails from '../ProjectDetails/ProjectDetails';
 import Error from '../Error/Error';
 import Contact from '../Contact/Contact';
 import { Switch, Route } from 'react-router-dom';
+import { useState, useEffect } from 'react'
+import getAPIData from '../../apiCalls';
 
 function App() {
+  const [projects, setProjects] = useState([])
+
+  const getData = () => {
+    getAPIData()
+    .then((data) => setProjects(data))
+    .catch((error) => console.log(error))
+  }
+
+  useEffect = () => {
+    getData()
+    console.log(projects)
+  }
+
   return (
     <div className='app-container'>
       <Switch>
@@ -30,28 +45,32 @@ function App() {
           exact
           path='/projects'
           render={() => (
-            <Work />
+            <Work 
+            projects={projects}
+            />
           )}
         />
         <Route 
-        exact
-        path='/projects/:id'
-        render={({ match }) => (
-          <ProjectDetails />
-        )}
+          exact
+          path='/projects/:id'
+          render={({ match }) => (
+            <ProjectDetails />
+          )}
         />
         <Route
-        exact
-        path='/contact'
-        render={() => (
-          <Contact />
-        )}/>
+          exact
+          path='/contact'
+          render={() => (
+            <Contact />
+          )}
+        />
         <Route
-        exact
-        path='*'
-        render={() => {
-          <Error />
-        }}/>
+          exact
+          path='*'
+          render={() => {
+            <Error />
+          }}
+        />
       </Switch>
     </div>
   );
