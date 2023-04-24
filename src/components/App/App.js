@@ -13,10 +13,15 @@ import getAPIData from '../../apiCalls';
 function App() {
   const [projects, setProjects] = useState([])
 
-  useEffect = () => {
+  const getData = () => {
     getAPIData()
     .then((data) => setProjects(data))
     .catch((error) => console.log(error))
+  }
+
+  useEffect = () => {
+    getData()
+    console.log(projects)
   }
 
   return (
