@@ -11,7 +11,7 @@ const Home = () => {
           <div>|</div>
           <Link to='/projects' className='projects link'>Projects</Link>
           <div>|</div>
-          <Link to='contact' className='contact link'>Contact</Link>
+          <Link to='/contact' className='contact link'>Contact</Link>
         </div>
       </nav>
       <main className='main-container'>
@@ -35,7 +35,7 @@ const Home = () => {
               <Link to='/projects' className='projects link'>Projects</Link>
             </div>
             <div className='contact circle'>
-              <Link to='contact' className='contact link'>Contact</Link>
+              <Link to='/contact' className='contact link'>Contact</Link>
             </div>
           </div>
         </section>
